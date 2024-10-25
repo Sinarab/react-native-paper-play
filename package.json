@@ -40,8 +40,7 @@
     "test": "jest",
     "prepack": "bob build && node ./scripts/generate-mappings.js",
     "release": "release-it",
-    "bootstrap": "yarn --cwd example && yarn --cwd docs && yarn",
-    "docs": "yarn --cwd docs",
+    "bootstrap": "yarn --cwd example && yarn",
     "example": "yarn --cwd example"
   },
   "publishConfig": {
@@ -106,12 +105,6 @@
     "react-native-safe-area-context": "*",
     "react-native-vector-icons": "*"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint-no-fix && yarn typescript && yarn test"
-    }
-  },
   "jest": {
     "preset": "react-native",
     "setupFiles": [
@@ -133,19 +126,6 @@
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(@react-native|react-native(-.*)?)/)"
-    ]
-  },
-  "greenkeeper": {
-    "ignore": [
-      "expo",
-      "react",
-      "react-dom",
-      "react-native",
-      "react-test-renderer",
-      "@types/react-native",
-      "@types/jest",
-      "husky",
-      "eslint"
     ]
   },
   "react-native-builder-bob": {
