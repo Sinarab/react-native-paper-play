@@ -50,6 +50,16 @@ const ToggleButtonExample = () => {
           <ToggleButton icon="format-color-text" value="format-color" />
         </ToggleButton.Row>
       </List.Section>
+      <List.Section title="Test">
+        <ToggleButton.Row
+          value={first}
+          onValueChange={(value: string) => setFirst(value)}
+          style={styles.padding}
+        >
+          <ToggleButton icon="format-underline" value="underlined" />
+          <ToggleButton icon="format-color-text" value="format-color" />
+        </ToggleButton.Row>
+      </List.Section>
       <List.Section title="Group & enums">
         <View style={styles.padding}>
           <ToggleButton.Group value={font} onValueChange={setFont}>

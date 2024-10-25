@@ -45,7 +45,7 @@ const BadgeExample = () => {
                 styles.badge,
                 {
                   backgroundColor: isV3
-                    ? MD3Colors.primary80
+                    ? MD3Colors.secondary10
                     : MD2Colors.blue500,
                 },
               ]}

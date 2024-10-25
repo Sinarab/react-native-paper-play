@@ -273,7 +273,6 @@ const TextInputExample = () => {
             <TextInput
               mode="outlined"
               style={styles.inputContainerStyle}
-              label="Outlined input"
               placeholder="Type something"
               value={outlinedText}
               onChangeText={(outlinedText) =>

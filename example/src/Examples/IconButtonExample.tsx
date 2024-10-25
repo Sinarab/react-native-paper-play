@@ -11,22 +11,22 @@ const ButtonExample = () => {
   if (!isV3) {
     return (
       <ScreenWrapper contentContainerStyle={styles.v2Container}>
-        <IconButton icon="camera" size={24} onPress={() => {}} />
+        <IconButton icon="camera" size={24} onPress={() => { }} />
         <IconButton
           icon="lock"
           size={24}
           iconColor={MD2Colors.green500}
-          onPress={() => {}}
+          onPress={() => { }}
         />
-        <IconButton icon="" size={24} onPress={() => {}} loading />
-        <IconButton icon="camera" size={36} onPress={() => {}} />
+        <IconButton icon="" size={24} onPress={() => { }} loading />
+        <IconButton icon="camera" size={36} onPress={() => { }} />
         <IconButton
           icon="lock"
           size={36}
-          onPress={() => {}}
+          onPress={() => { }}
           style={{ backgroundColor: MD2Colors.lightGreen200 }}
         />
-        <IconButton icon="heart" size={60} onPress={() => {}} />
+        <IconButton icon="heart" size={60} onPress={() => { }} />
       </ScreenWrapper>
     );
   }
@@ -35,10 +35,10 @@ const ButtonExample = () => {
     <ScreenWrapper contentContainerStyle={styles.v3Container}>
       <List.Section title="Default">
         <View style={styles.row}>
-          <IconButton icon="camera" size={24} onPress={() => {}} />
-          <IconButton icon="camera" selected size={24} onPress={() => {}} />
-          <IconButton icon="camera" disabled size={24} onPress={() => {}} />
-          <IconButton icon="camera" size={24} onPress={() => {}} loading />
+          <IconButton icon="camera" size={24} onPress={() => { }} />
+          <IconButton icon="camera" selected size={24} onPress={() => { }} />
+          <IconButton icon="camera" disabled size={24} onPress={() => { }} />
+          <IconButton icon="camera" size={24} onPress={() => { }} loading />
         </View>
       </List.Section>
 
@@ -48,21 +48,23 @@ const ButtonExample = () => {
             icon="camera"
             mode="contained"
             size={24}
-            onPress={() => {}}
+            onPress={() => { }}
+            style={{ borderRadius: 4 }}
           />
           <IconButton
             icon="camera"
             mode="contained"
             selected
             size={24}
-            onPress={() => {}}
+            onPress={() => { }}
+            style={{ borderRadius: 4 }}
           />
           <IconButton
             icon="camera"
             mode="contained"
             disabled
             size={24}
-            onPress={() => {}}
+            onPress={() => { }}
           />
           <IconButton
             icon=""
@@ -70,7 +72,7 @@ const ButtonExample = () => {
             selected
             loading
             size={24}
-            onPress={() => {}}
+            onPress={() => { }}
           />
         </View>
       </List.Section>
@@ -81,28 +83,28 @@ const ButtonExample = () => {
             icon="camera"
             mode="contained-tonal"
             size={24}
-            onPress={() => {}}
+            onPress={() => { }}
           />
           <IconButton
             icon="camera"
             selected
             mode="contained-tonal"
             size={24}
-            onPress={() => {}}
+            onPress={() => { }}
           />
           <IconButton
             icon="camera"
             mode="contained-tonal"
             disabled
             size={24}
-            onPress={() => {}}
+            onPress={() => { }}
           />
           <IconButton
             icon=""
             mode="contained-tonal"
             disabled
             size={24}
-            onPress={() => {}}
+            onPress={() => { }}
             loading
           />
         </View>
@@ -114,28 +116,28 @@ const ButtonExample = () => {
             icon="camera-outline"
             mode="outlined"
             size={24}
-            onPress={() => {}}
+            onPress={() => { }}
           />
           <IconButton
             selected
             icon="camera"
             mode="outlined"
             size={24}
-            onPress={() => {}}
+            onPress={() => { }}
           />
           <IconButton
             icon="camera"
             mode="outlined"
             disabled
             size={24}
-            onPress={() => {}}
+            onPress={() => { }}
           />
           <IconButton
             icon=""
             mode="outlined"
             disabled
             size={24}
-            onPress={() => {}}
+            onPress={() => { }}
             loading
           />
         </View>
@@ -147,7 +149,8 @@ const ButtonExample = () => {
             icon="lock"
             size={24}
             iconColor={MD3Colors.tertiary50}
-            onPress={() => {}}
+            onPress={() => { }}
+            style={{ borderRadius: 4 }}
           />
           <IconButton
             icon="eye"
@@ -155,17 +158,17 @@ const ButtonExample = () => {
             style={styles.square}
             size={24}
             iconColor={MD3Colors.tertiary50}
-            onPress={() => {}}
+            onPress={() => { }}
           />
-          <IconButton icon="camera" size={36} onPress={() => {}} />
+          <IconButton icon="camera" size={36} onPress={() => { }} />
           <IconButton
             icon="lock"
             size={36}
-            onPress={() => {}}
+            onPress={() => { }}
             containerColor={MD3Colors.tertiary60}
           />
-          <IconButton icon="heart" size={60} onPress={() => {}} />
-          <IconButton icon="" size={60} onPress={() => {}} loading />
+          <IconButton icon="heart" size={60} onPress={() => { }} />
+          <IconButton icon="" size={60} onPress={() => { }} loading />
         </View>
       </List.Section>
     </ScreenWrapper>

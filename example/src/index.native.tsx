@@ -225,10 +225,112 @@ export default function PaperExample() {
     }),
   };
 
+  const TeresaTheme = {
+    ...MD3LightTheme,
+    // ...NavThemes.LightTheme,
+
+    customLineHight: 20,
+
+    roundness: 1,
+
+    // fonts: configureFonts({ config: fontConfig }),
+
+    colors: {
+      ...MD3LightTheme.colors,
+      // ...NavThemes.LightTheme.colors,
+
+      /**
+       * The primary key color is used to derive roles for key components across the UI,
+       * such as the FAB, prominent buttons, active states, as well as the tint of elevated surfaces.
+       */
+      primary: "rgba(0, 200, 179, 1)", // edited
+      onPrimary: "rgba(255, 255, 255, 1)",
+      primaryContainer: "rgba(215, 247, 229, 1)", // edited
+      onPrimaryContainer: "rgba(0, 32, 28, 1)",
+
+      /**
+       * The secondary key color is used for less prominent components in the UI such as filter chips,
+       * while expanding the opportunity for color expression.
+       */
+      secondary: "rgba(85, 85, 85, 1)",
+      onSecondary: "rgba(255, 255, 255, 1)",
+      secondaryContainer: "rgba(216, 245, 245, 1)", // edited
+      onSecondaryContainer: "rgba(91, 136, 168, 1)",
+
+      /**
+       * The tertiary color role is left for teams to use at their
+       * discretion and is intended to support broader color expression in products.
+       */
+      tertiary: "rgba(0, 106, 101, 1)",
+      onTertiary: "rgba(255, 255, 255, 1)",
+      tertiaryContainer: "rgba(112, 247, 239, 1)",
+      onTertiaryContainer: "rgba(0, 32, 30, 1)",
+
+      /**
+       * In addition to the accent and neutral key color,
+       * the color system includes a semantic color role for error
+       */
+      error: "rgba(246, 75, 75, 1)",
+      onError: "rgba(255, 255, 255, 1)",
+      errorContainer: "rgba(255, 218, 218, 1)",
+      onErrorContainer: "rgba(65, 0, 2, 1)",
+
+      /**
+       * The neutral key color is used to derive the roles of surface and background,
+       * as well as high emphasis text and icons.
+       */
+      background: "rgba(255, 255, 255, 1)",
+      onBackground: "rgba(25, 28, 27, 1)",
+      surface: "rgba(255, 255, 255, 1)",
+      onSurface: "rgba(25, 28, 27, 1)",
+
+      /**
+       * The neutral variant key color is used to derive medium emphasis
+       * text and icons, surface variants, and component outlines.
+       */
+      surfaceVariant: "rgba(0, 0, 0, 0)",
+      onSurfaceVariant: "rgba(63, 73, 70, 1)",
+      outline: "rgba(125, 221, 221, 1)", // edited
+      outlineVariant: "rgba(190, 201, 197, 1)",
+
+      /**
+       * These additional role mappings exist in a scheme and are mapped to components where needed.
+       */
+      shadow: "rgba(0, 0, 0, 1)",
+      scrim: "rgba(0, 0, 0, 1)",
+      inverseSurface: "rgba(45, 49, 48, 1)",
+      inverseOnSurface: "rgba(239, 241, 239, 1)",
+      inversePrimary: "rgba(57, 221, 199, 1)",
+      backdrop: "rgba(41, 50, 48, 0.4)",
+
+      /**
+       * Surfaces at elevation levels 0-5 are tinted via color overlays based on the primary color,
+       * such as app bars or menus. The addition of a grade from 0-5 introduces
+       * tonal variation to the surface baseline.
+       */
+      elevation: {
+        level0: "transparent",
+        level1: "rgba(238, 246, 243, 1)",
+        level2: "rgba(215, 247, 229, 1)",
+        level3: "rgba(223, 238, 237, 1)",
+        level4: "rgba(220, 236, 232, 1)",
+        level5: "rgba(215, 233, 229, 1)"
+      },
+
+      /**
+       * Colors for disabled state
+       */
+      surfaceDisabled: "rgba(191, 193, 193, 0.12)",
+      onSurfaceDisabled: "rgba(191, 193, 193, 0.38)",
+    },
+  }
+
+
   return (
     <PaperProvider
       settings={{ rippleEffectEnabled: preferences.rippleEffectEnabled }}
-      theme={customFontLoaded ? configuredFontTheme : theme}
+      // theme={customFontLoaded ? configuredFontTheme : theme}
+      theme={TeresaTheme}
     >
       <PreferencesContext.Provider value={preferences}>
         <React.Fragment>
