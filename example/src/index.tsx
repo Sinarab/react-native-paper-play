@@ -182,6 +182,7 @@ export default function PaperExample() {
     }),
   };
 
+  //@mayra
   const TeresaDark = {
     ...MD3DarkTheme,
     colors: {
@@ -210,6 +211,7 @@ export default function PaperExample() {
   }
 
 
+  //@mayra
   const TeresaTheme = {
     ...MD3LightTheme,
     // ...NavThemes.LightTheme,
